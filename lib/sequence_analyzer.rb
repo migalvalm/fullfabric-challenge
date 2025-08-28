@@ -16,8 +16,7 @@ module SequenceAnalyzer
       end
 
       return current_number if  missing_number_count == nth
-      
-      current_number += 1 if missing_number_count < nth
+      current_number += 1
     end
 
     return current_number
