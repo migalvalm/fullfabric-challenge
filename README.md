@@ -21,7 +21,7 @@ Then by having the thought `"Why do I need to sort the array if I just wanna che
 
 Then I wanted to make the lookup time be even less, and remembered about the [.to_set](https://apidock.com/ruby/v2_6_3/Enumerable/to_set) method, this method converts the array to a `Set` once, providing constant-time lookups, this data structure is optimized for storing unique values (which is great for the challenge in question), making it way more memory efficient compared to using an `Array` or an `Hash`, this would then make the lookup time `O(1)` with the trade-off of bigger additional memory for the set strucutre and slightly bigger initalization overhead but in my opinion the most clear and optimized implementation we could have, unless...
 
-### The array was larger? 
+### The use case where array would continue to infinity
 
 _P.S This one I did not implement for lack of time but thought of the use case and this would be my way of doing things:_
 
