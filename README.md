@@ -25,7 +25,7 @@ Then I wanted to make the lookup time be even less, and remembered about the [.t
 
 _P.S This one I did not implement for lack of time but thought of the use case and this would be my way of doing things:_
 
-I would change the search block to use binary search, which you can achieve by using the [.bsearch_index](https://apidock.com/ruby/v2_6_3/Array/bsearch_index) method, this method would need the array to be sorted so we would need to revert to sorting the array which would make us go back to the sorting overhead issue we found on the first solution I mentioned previously but it would be beneficial for very very large arrays since the cost of sorting would amortize the over many lookups. In this case lookup time would be `O(log n)` but more efficient for larger arrays then the previous solution.
+I would change the search block to use binary search, which you can achieve by using the [.bsearch_index](https://apidock.com/ruby/v2_6_3/Array/bsearch_index) method, this method would need the array to be sorted so we would need to revert to sorting the array which would make us go back to the sorting overhead issue we found on the first solution I mentioned previously but it would be beneficial for very very large arrays since the cost of sorting would amortize the over many lookups. In this case lookup time would be `O(log n)` and more efficient for larger arrays then the previous solution.
 
 ## Testing
 
