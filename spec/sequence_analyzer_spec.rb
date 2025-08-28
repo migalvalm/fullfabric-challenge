@@ -44,6 +44,10 @@ RSpec.describe SequenceAnalyzer do
       end
       it do
         array = [4, 3, 6, 2, 1, 7]
+        expect(SequenceAnalyzer.find_missing_number(array, nth: 3)).to eq(9)
+      end
+            it do
+        array = [4, 3, 6, 2, 9, 1, 7]
         expect(SequenceAnalyzer.find_missing_number(array, nth: 3)).to eq(10)
       end
     end
