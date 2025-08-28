@@ -6,11 +6,12 @@ module SequenceAnalyzer
 
     return 1 if arr.empty?
 
+    num_set = arr.to_set
     current_number = 1
     missing_number_count = 0
 
     while missing_number_count < nth
-      if !arr.include?(current_number)
+      if !num_set.include?(current_number)
         missing_number_count += 1
       end
 
